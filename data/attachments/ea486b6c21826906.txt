@@ -1,0 +1,32 @@
+INFO     api_client:base_api.py:104 ---> POST https://petstore.swagger.io/v2/user/createWithArray
+INFO     api_client:base_api.py:108 JSON Body: [
+  {
+    "id": 6433482,
+    "username": "user_htienr",
+    "firstName": "First_cAFa",
+    "lastName": "Last_qucL",
+    "email": "user_htienr@example.com",
+    "password": "Pass_xLIIMe",
+    "phone": "+79994566197",
+    "userStatus": 0
+  },
+  {
+    "id": 6433483,
+    "username": "user_htienr_2",
+    "firstName": "First_cAFa",
+    "lastName": "Last_qucL",
+    "email": "user_htienr@example.com",
+    "password": "Pass_xLIIMe",
+    "phone": "+79994566197",
+    "userStatus": 0
+  }
+]
+INFO     api_client:base_api.py:140 <--- 200 https://petstore.swagger.io/v2/user/createWithArray (8 ms)
+INFO     api_client:base_api.py:104 ---> GET https://petstore.swagger.io/v2/user/user_htienr
+INFO     api_client:base_api.py:140 <--- 200 https://petstore.swagger.io/v2/user/user_htienr (7 ms)
+INFO     api_client:base_api.py:104 ---> GET https://petstore.swagger.io/v2/user/user_htienr_2
+INFO     api_client:base_api.py:140 <--- 200 https://petstore.swagger.io/v2/user/user_htienr_2 (7 ms)
+INFO     api_client:base_api.py:104 ---> DELETE https://petstore.swagger.io/v2/user/user_htienr
+INFO     api_client:base_api.py:140 <--- 200 https://petstore.swagger.io/v2/user/user_htienr (7 ms)
+INFO     api_client:base_api.py:104 ---> DELETE https://petstore.swagger.io/v2/user/user_htienr_2
+INFO     api_client:base_api.py:140 <--- 200 https://petstore.swagger.io/v2/user/user_htienr_2 (8 ms)

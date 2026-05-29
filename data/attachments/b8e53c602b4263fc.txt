@@ -1,0 +1,36 @@
+INFO     api_client:base_api.py:104 ---> POST https://petstore.swagger.io/v2/pet
+INFO     api_client:base_api.py:108 JSON Body: {
+  "id": 2418134,
+  "category": {
+    "id": 1,
+    "name": "Dogs"
+  },
+  "name": "AutoPet_cGVmOQ",
+  "photoUrls": [
+    "https://example.com/photo.jpg"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "friendly"
+    }
+  ],
+  "status": "available"
+}
+INFO     api_client:base_api.py:140 <--- 200 https://petstore.swagger.io/v2/pet (8 ms)
+INFO     api_client:base_api.py:104 ---> POST https://petstore.swagger.io/v2/store/order
+INFO     api_client:base_api.py:108 JSON Body: {
+  "id": 1824701,
+  "petId": 2418134,
+  "quantity": 1,
+  "shipDate": "2026-05-29T13:00:00.000Z",
+  "status": "placed",
+  "complete": true
+}
+INFO     api_client:base_api.py:140 <--- 200 https://petstore.swagger.io/v2/store/order (8 ms)
+INFO     api_client:base_api.py:104 ---> GET https://petstore.swagger.io/v2/store/order/1824701
+INFO     api_client:base_api.py:140 <--- 200 https://petstore.swagger.io/v2/store/order/1824701 (7 ms)
+INFO     api_client:base_api.py:104 ---> DELETE https://petstore.swagger.io/v2/store/order/1824701
+INFO     api_client:base_api.py:140 <--- 200 https://petstore.swagger.io/v2/store/order/1824701 (7 ms)
+INFO     api_client:base_api.py:104 ---> DELETE https://petstore.swagger.io/v2/pet/2418134
+INFO     api_client:base_api.py:140 <--- 200 https://petstore.swagger.io/v2/pet/2418134 (8 ms)

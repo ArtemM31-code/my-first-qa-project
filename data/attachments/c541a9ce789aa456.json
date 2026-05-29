@@ -1,0 +1,24 @@
+Статус-код: 200
+Время ответа: 7 ms
+
+--- Заголовки ответа ---
+Date: Fri, 29 May 2026 11:11:45 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+--- Тело ответа ---
+{
+  "id": 6433482,
+  "username": "user_htienr",
+  "firstName": "First_cAFa",
+  "lastName": "Last_qucL",
+  "email": "user_htienr@example.com",
+  "password": "Pass_xLIIMe",
+  "phone": "+79994566197",
+  "userStatus": 0
+}

@@ -1,0 +1,32 @@
+Статус-код: 200
+Время ответа: 8 ms
+
+--- Заголовки ответа ---
+Date: Fri, 29 May 2026 11:11:45 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+--- Тело ответа ---
+{
+  "id": 9328934,
+  "category": {
+    "id": 1,
+    "name": "Dogs"
+  },
+  "name": "AutoPet_paiQmc",
+  "photoUrls": [
+    "https://example.com/photo.jpg"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "friendly"
+    }
+  ],
+  "status": "available"
+}

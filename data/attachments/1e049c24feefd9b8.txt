@@ -1,0 +1,4 @@
+INFO     api_client:base_api.py:104 ---> DELETE https://petstore.swagger.io/v2/pet/88888888
+INFO     api_client:base_api.py:140 <--- 404 https://petstore.swagger.io/v2/pet/88888888 (9 ms)
+INFO     api_client:base_api.py:104 ---> DELETE https://petstore.swagger.io/v2/pet/88888888
+INFO     api_client:base_api.py:140 <--- 404 https://petstore.swagger.io/v2/pet/88888888 (8 ms)

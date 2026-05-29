@@ -1,0 +1,22 @@
+Статус-код: 200
+Время ответа: 8 ms
+
+--- Заголовки ответа ---
+Date: Fri, 29 May 2026 11:11:45 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+--- Тело ответа ---
+{
+  "id": 4609057,
+  "petId": 6990348,
+  "quantity": 1,
+  "shipDate": "2026-05-29T13:00:00.000+0000",
+  "status": "placed",
+  "complete": true
+}

@@ -1,0 +1,21 @@
+Статус-код: 200
+Время ответа: 8 ms
+
+--- Заголовки ответа ---
+Date: Fri, 29 May 2026 11:11:45 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+X-Expires-After: Fri May 29 12:11:45 UTC 2026
+X-Rate-Limit: 5000
+Server: Jetty(9.2.9.v20150224)
+
+--- Тело ответа ---
+{
+  "code": 200,
+  "type": "unknown",
+  "message": "logged in user session:1780053105389"
+}

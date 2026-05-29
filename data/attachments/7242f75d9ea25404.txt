@@ -1,0 +1,1 @@
+curl -X POST 'https://petstore.swagger.io/v2/pet/9219551' -H 'User-Agent: python-requests/2.34.2' -H 'Accept-Encoding: gzip, deflate' -H 'Accept: application/json' -H 'Connection: keep-alive' -H 'Content-Type: application/x-www-form-urlencoded' -H 'api_key: special-key' -d '{"name": "FormRex", "status": "pending"}'

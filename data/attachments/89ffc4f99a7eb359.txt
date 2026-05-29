@@ -1,0 +1,2 @@
+INFO     api_client:base_api.py:104 ---> GET https://petstore.swagger.io/v2/store/order/999999
+INFO     api_client:base_api.py:140 <--- 404 https://petstore.swagger.io/v2/store/order/999999 (7 ms)

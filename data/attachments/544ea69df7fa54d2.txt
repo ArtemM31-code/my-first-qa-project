@@ -1,0 +1,17 @@
+INFO     api_client:base_api.py:104 ---> POST https://petstore.swagger.io/v2/user
+INFO     api_client:base_api.py:108 JSON Body: {
+  "id": 9170931,
+  "username": "user_hwehgs",
+  "firstName": "First_UYUW",
+  "lastName": "Last_EHmW",
+  "email": "user_hwehgs@example.com",
+  "password": "Pass_MHiiKE",
+  "phone": "+79997469769",
+  "userStatus": 0
+}
+INFO     api_client:base_api.py:140 <--- 200 https://petstore.swagger.io/v2/user (8 ms)
+INFO     api_client:base_api.py:104 ---> GET https://petstore.swagger.io/v2/user/login
+INFO     api_client:base_api.py:106 Params: {'username': 'user_hwehgs', 'password': 'Pass_MHiiKE'}
+INFO     api_client:base_api.py:140 <--- 200 https://petstore.swagger.io/v2/user/login?username=user_hwehgs&password=Pass_MHiiKE (8 ms)
+INFO     api_client:base_api.py:104 ---> DELETE https://petstore.swagger.io/v2/user/user_hwehgs
+INFO     api_client:base_api.py:140 <--- 200 https://petstore.swagger.io/v2/user/user_hwehgs (8 ms)

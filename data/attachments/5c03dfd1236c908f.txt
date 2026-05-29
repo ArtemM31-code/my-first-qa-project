@@ -1,0 +1,19 @@
+INFO     api_client:base_api.py:104 ---> POST https://petstore.swagger.io/v2/pet
+INFO     api_client:base_api.py:108 JSON Body: {
+  "id": 2430146,
+  "category": {
+    "id": 1,
+    "name": "Dogs"
+  },
+  "photoUrls": [
+    "https://example.com/photo.jpg"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "friendly"
+    }
+  ],
+  "status": "available"
+}
+INFO     api_client:base_api.py:140 <--- 200 https://petstore.swagger.io/v2/pet (8 ms)
