@@ -1,0 +1,40 @@
+name: Run QA Tests
+
+# Указываем, когда запускать пайплайн: при каждом пуше в ветку main
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest # Тесты будут запускаться на чистой виртуальной машине Ubuntu
+
+    steps:
+    - name: Checkout repository code
+      uses: actions/checkout@v4 # Скачиваем наш код из репозитория GitHub на виртуалку
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12' # Устанавливаем Python версии 3.12
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt # Скачиваем библиотеки из requirements.txt
+
+    - name: Install Playwright browsers (Chromium only for speed)
+      run: playwright install chromium --with-deps # Скачиваем браузер для UI-тестов
+
+    - name: Start local mock web server in background
+      run: |
+        python app.py & # Запускаем наш сервер в фоновом режиме (знак & обязателен!)
+
+    - name: Wait for server to boot up
+      run: sleep 3 # Даем серверу 3 секунды, чтобы он успел запуститься
+
+    - name: Run E2E Test Suite via Pytest
+      run: |
+        pytest -v # Запускаем все наши тесты!
